@@ -22,6 +22,14 @@ func main() {
 			zipCode: 95000,
 		},
 	}
+	john.updateName("Jone")
+	john.print()
+}
 
-	fmt.Printf("%+v\n", john)
+func (p person) updateName(newFirstName string) {
+	p.firstName = newFirstName
+}
+
+func (p person) print() {
+	fmt.Printf("%+v\n", p)
 }
