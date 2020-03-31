@@ -21,6 +21,10 @@ func main() {
 	}
 
 	println(<-c)
+	println(<-c)
+	println(<-c)
+	println(<-c)
+	println(<-c)
 }
 
 func checkLink(link string, c chan string) {
